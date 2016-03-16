@@ -1,0 +1,38 @@
+#NOTE: this really depends on your project, this is just a general guideline
+
+##################################################################
+#                         Experiment                             #
+##################################################################
+
+############################
+# Feature selection        #
+############################
+
+features:
+    #Use only feature4 from featureset1
+    - featureset1.feature4
+    #Use feature1 and feature2 from featureset2
+    - featureset2.feature1
+    - featureset2.feature2
+    #Use all features from featureset3
+    - featureset3.*
+
+############################
+# Model selection          #
+############################
+
+#Train all these models
+models:
+    - 'sklearn.ensemble.AdaBoostClassifier'
+    - 'sklearn.ensemble.RandomForestClassifier'
+    - 'sklearn.ensemble.ExtraTreesClassifier'
+    - 'sklearn.ensemble.GradientBoostingClassifier'
+    - 'sklearn.linear_model.LogisticRegression'
+    - 'sklearn.svm.SVC'
+
+############################
+# Experiment name          #
+############################
+
+#Give a name to this experimen
+experiment_name: 'awesome_experiment'

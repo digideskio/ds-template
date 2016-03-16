@@ -1,0 +1,12 @@
+db:
+  dialect: 'postgresql'
+  host: 'host.database.com'
+  user: 'username'
+  password: 'password'
+  database: 'database_name'
+  port: 5432
+
+logger:
+  uri: 'mongodb://YOUR-MONGO-URI'
+  db: 'YOUR-MONGO-DB-NAME'
+  collection: 'YOUR-MONGO-DB-COLLECTION'
